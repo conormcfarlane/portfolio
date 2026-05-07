@@ -1,6 +1,24 @@
 @import "tailwindcss";
 
+@theme {
+  --color-navy: #0A192F;
+  --color-light-navy: #112240;
+
+  --color-slate: #8892B0;
+  --color-light-slate: #A8B2D1;
+  --color-lightest-slate: #CCD6F6;
+
+  --color-accent: #64FFDA;
+
+  /* custom colors */
+  --color-brand-dark: #134E4A;
+  --color-brand-aqua: #5EEAD4;
+  --color-brand-slate: #94A3B8;
+}
+
 body {
+  background-color: var(--color-navy);
   color: white;
   font-size: 1rem;
+  color: var(--color-light-slate);
 }

@@ -5,22 +5,23 @@ import Button from '../ui/Button'
 
 export default function Hero() {
     return (
-        <div className='bg-amber-900 p-4'>
+        <div className='p-4 space-y-5'>
             <div className='flex justify-between items-center space-y-5'>
                 <div className='space-y-2'>
                     <div className='flex gap-6'>
-                        <FaGithub className='text-2xl' />
-                        <FaLinkedin className='text-2xl' />
+                        <FaGithub className='text-2xl rounded-full hover:text-white hover:shadow-accent hover:shadow ' />
+                        <FaLinkedin className='text-2xl rounded-md hover:text-white hover:shadow-accent hover:shadow' />
                     </div>
-                    <h1 className='text-7xl font-bold'>Hi, I&apos;m Conor</h1>
-                    <p className='text-4xl'>I&apos;m a <span className='text-5xl  text-blue-700'>Junior Web Developer</span></p>
+
+                    <h1 className='text-7xl font-bold'>Hi,<span className='text-white'>I&apos;m Conor</span> </h1>
+                    <p className='text-4xl'>I&apos;m a <span className='text-5xl'>Junior Web Developer</span></p>
                 </div>
-                <p>the profile fella</p>
             </div>
-            <p className='bg-red-800'>I am a Junior Web Developer and it seems like i am never going to get a job, nice one</p>
-            <div className='mt-5'>
+            <p>I am a Junior Web Developer and it seems like i am never going to get a job, nice one</p>
+            <div>
                 <Button label='GET IN TOUCH !' />
             </div>
+
 
         </div>
     )

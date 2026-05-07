@@ -6,7 +6,7 @@ import Hero from "@/components/sections/Hero";
 
 export default function Home() {
   return (
-    <div className="space-y-40">
+    <div className="space-y-30">
       <Navbar />
       <Hero />
       <About />
