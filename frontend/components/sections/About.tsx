@@ -1,19 +1,27 @@
 import React from 'react'
 
 export default function About() {
-    const programmingTags = ['React', 'NextJS', 'NodeJS', 'HTML', 'CSS', 'Javascript']
+    const programmingTags = ['React', 'Next.js', 'Sanity CMS', 'HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'Tailwind', 'Github']
     return (
         <div className=''>
-            <p className='text-center text-5xl'>About .</p>
-            <div className='flex gap-4'>
-                <p className='w-1/2 text-lg'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit omnis error minus nobis aliquid, aperiam reprehenderit, voluptas porro illum libero placeat, odio iure nemo blanditiis sequi id rem eligendi? Quia.
-                    Fuga repellat placeat expedita tempore pariatur tenetur ducimus cum aspernatur eum, quisquam sequi aperiam repudiandae aut, id inventore. Quisquam ea quo iste similique minima omnis nulla corporis accusantium eligendi est?
+            <p className='text-center text-5xl mb-4'>About .</p>
+            <div className='flex gap-4 justify-between'>
+                <p className='w-3/4 text-lg'>I&apos;m a front-end developer focused on building responsive web applications using React and TypeScript.<br />
+                    I&apos;ve completed several projects using APIs, JSON data and client-side routing. I primarly use  Figma to turn designs to life using React,Tailwind and TypeScript.<br />
+                    For this portfoilio site i have used Next.js and Sanity as a headless CMS to store and manage my project data.
                 </p>
-                <div className='grid grid-cols-3 items-start auto-rows-min gap-4'>
-                    {programmingTags.map((tag) => (
-                        <p key={tag} className='py-1 px-5 bg-gray-700 rounded-2xl text-center'>{tag}</p>
-                    ))}
+                <div>
+                    <p className='text-center text-xl'>&lt;&gt;  Tech & Languages &lt;/&gt; </p>
+                    <div className='grid grid-cols-2 gap-3 bg-red-800'>
+                        {programmingTags.map((tag) => (
+                            <div key={tag} className='bg-gray-900 flex justify-center rounded-xl'>
+                                <p className='py-1 px-4 whitespace-nowrap'>{tag}</p>
+                            </div>
+
+                        ))}
+                    </div>
                 </div>
+
             </div>
 
         </div>
