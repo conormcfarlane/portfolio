@@ -15,6 +15,9 @@
   --color-brand-aqua: #5EEAD4;
   --color-brand-slate: #94A3B8;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: var(--color-navy);

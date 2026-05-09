@@ -3,7 +3,7 @@ import React from 'react'
 export default function About() {
     const programmingTags = ['React', 'Next.js', 'Sanity CMS', 'HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'Tailwind', 'Github']
     return (
-        <div className=''>
+        <section id='about' className='min-h-screen'>
             <p className='text-center text-5xl mb-4 text-white'>About <span className='text-accent text-7xl'>.</span></p>
             <div className='flex justify-between gap-10 flex-col sm:flex-row'>
                 <p className='text-lg sm:w-3/5'>I&apos;m a front-end developer focused on building responsive web applications using React and TypeScript.<br />
@@ -24,6 +24,6 @@ export default function About() {
 
             </div>
 
-        </div>
+        </section>
     )
 }

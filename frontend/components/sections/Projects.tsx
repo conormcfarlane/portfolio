@@ -8,7 +8,7 @@ export default async function Projects() {
     console.log("DATASET:", process.env.NEXT_PUBLIC_SANITY_DATASET);
     const projects = await client.fetch<Project[]>(`*[_type == "project"]`);
     return (
-        <div>
+        <section id='projects'>
             {projects.length > 0 ? 'Projects loaded' : 'No projects yet'}
             {projects.map((project) => (
                 <div key={project._id}>
@@ -16,6 +16,6 @@ export default async function Projects() {
                 </div>
 
             ))}
-        </div>
+        </section>
     )
 }

@@ -6,7 +6,7 @@ import Projects from "@/components/sections/Projects";
 
 export default function Home() {
   return (
-    <div className="space-y-30">
+    <div className="">
       <Navbar />
       <Hero />
       <About />
