@@ -5,7 +5,7 @@ import Button from '../ui/Button'
 
 export default function Hero() {
     return (
-        <section id='hero' className='p-4 space-y-5 min-h-screen flex flex-col justify-center'>
+        <section id='hero' className='p-4 space-y-5 flex flex-col justify-center'>
             <div className='flex justify-between items-center space-y-5'>
                 <div className='space-y-2'>
                     <div className='flex gap-6'>

@@ -3,10 +3,10 @@ import React from 'react'
 export default function About() {
     const programmingTags = ['React', 'Next.js', 'Sanity CMS', 'HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'Tailwind', 'Github']
     return (
-        <section id='about' className='min-h-screen'>
+        <section id='about' className=''>
             <p className='text-center text-5xl mb-4 text-white'>About <span className='text-accent text-7xl'>.</span></p>
-            <div className='flex justify-between gap-10 flex-col sm:flex-row'>
-                <p className='text-lg sm:w-3/5'>I&apos;m a front-end developer focused on building responsive web applications using React and TypeScript.<br />
+            <div className='flex flex-col justify-between gap-10 md:flex-row lg:flex-col'>
+                <p className='text-lg sm:w-3/5 lg:w-full'>I&apos;m a front-end developer focused on building responsive web applications using React and TypeScript.<br />
                     I&apos;ve completed several projects using APIs, JSON data and client-side routing. I primarly use  Figma to transform designs to life using React,Tailwind and TypeScript.<br />
                     For this portfoilio site i have used Next.js and Sanity as a headless CMS to store and manage my project data.
                 </p>

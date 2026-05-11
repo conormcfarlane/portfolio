@@ -15,7 +15,8 @@
   --color-brand-aqua: #5EEAD4;
   --color-brand-slate: #94A3B8;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
