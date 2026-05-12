@@ -13,8 +13,8 @@ export default function Hero() {
                         <FaLinkedin className='text-2xl rounded-md hover:text-white hover:shadow-accent hover:shadow' />
                     </div>
 
-                    <h1 className='text-7xl font-bold'>Hi,<span className='text-white'>I&apos;m Conor</span> </h1>
-                    <p className='text-4xl'>I&apos;m a <span className='text-5xl'>Junior Web Developer</span></p>
+                    <h1 className='text-5xl font-bold'>Hi, <span className='text-white'>I&apos;m Conor</span> </h1>
+                    <p className='text-4xl'>I&apos;m a Junior Web Developer</p>
                 </div>
             </div>
             <p>I am a Junior Web Developer and it seems like i am never going to get a job, nice one</p>
