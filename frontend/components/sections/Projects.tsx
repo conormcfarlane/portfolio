@@ -6,7 +6,7 @@ import { urlFor } from '@/lib/image'
 export default async function Projects() {
     console.log("PROJECT ID:", process.env.NEXT_PUBLIC_SANITY_PROJECT_ID);
     console.log("DATASET:", process.env.NEXT_PUBLIC_SANITY_DATASET);
-    const projects = await client.fetch<Project[]>(`*[_type == "project"]`);
+    const projects = await client.fetch<Project[]>(`*[_type == "project"] | order(orderRank asc)`);
     return (
         <section id='projects'>
             <p className='text-center text-4xl mb-4 text-white'>Projects <span className='text-accent text-7xl'>.</span></p>

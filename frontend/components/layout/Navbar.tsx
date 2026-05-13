@@ -1,17 +1,16 @@
-import React from 'react'
+// import React from 'react'
 
 
-export default function Navbar() {
-    const navBarLinks = [
-        { title: 'About', href: '#about' },
-        { title: 'Projects', href: '#projects' }]
-    return (
-        <nav className='flex justify-end xl:justify-start xl:p-4'>
-            <div className='flex gap-8 xl:flex-col xl:justify-center'>{navBarLinks.map((link) => (
-                <ul key={link.title}>
-                    <li className=''><a href={link.href} className='inline-block cursor-pointer transition-transform duration-200 hover:scale-125 hover:text-white xl:text-2xl'> {link.title}</a></li>
-                </ul>
-            ))}</div>
-        </nav>
-    )
-}
+// export default function Navbar() {
+//     const navBarLinks = [
+//         { title: 'Projects', href: '#projects' }]
+//     return (
+//         <nav className='flex justify-end xl:justify-start xl:p-4'>
+//             <div className='flex gap-8 xl:flex-col xl:justify-center'>{navBarLinks.map((link) => (
+//                 <ul key={link.title}>
+//                     <li className=''><a href={link.href} className='inline-block cursor-pointer transition-transform duration-200 hover:scale-125 hover:text-white xl:text-2xl'> {link.title}</a></li>
+//                 </ul>
+//             ))}</div>
+//         </nav>
+//     )
+// }

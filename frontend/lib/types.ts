@@ -8,4 +8,5 @@ export interface Project {
     githubUrl?: string
     featured: boolean
     image: any
+    orderRank: number
 }

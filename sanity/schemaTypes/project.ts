@@ -52,6 +52,11 @@ export default defineType({
             name: 'featured',
             title: 'Featured',
             type: 'boolean',
+        }),
+        defineField({
+            name: 'orderRank',
+            title: 'Order Rank',
+            type: 'number',
         })
     ],
 

@@ -9,17 +9,33 @@ export default function Hero() {
             <div className='flex justify-between items-center space-y-5'>
                 <div className='space-y-2'>
                     <div className='flex gap-6'>
-                        <FaGithub className='text-2xl rounded-full hover:text-white hover:shadow-accent hover:shadow ' />
-                        <FaLinkedin className='text-2xl rounded-md hover:text-white hover:shadow-accent hover:shadow' />
+                        <a
+                            href='https://github.com/conormcfarlane'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            aria-label='GitHub profile'
+                            className='rounded-full hover:text-white hover:shadow-accent hover:shadow'
+                        >
+                            <FaGithub className='text-2xl' />
+                        </a>
+                        <a
+                            href='https://www.linkedin.com/in/conor-mcfarlane-1a2728185/'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            aria-label='LinkedIn profile'
+                            className='rounded-md hover:text-white hover:shadow-accent hover:shadow'
+                        >
+                            <FaLinkedin className='text-2xl' />
+                        </a>
                     </div>
 
                     <h1 className='text-5xl font-bold'>Hi, <span className='text-white'>I&apos;m Conor</span> </h1>
                     <p className='text-4xl'>I&apos;m a Junior Web Developer</p>
                 </div>
             </div>
-            <p>I am a Junior Web Developer and it seems like i am never going to get a job, nice one</p>
+            <p> For this portfoilio site i have used Next.js and Sanity as a headless CMS to store and manage my project data.</p>
             <div>
-                <Button label='GET IN TOUCH !' />
+                <Button label='Projects ↓' href='#projects' className='max-w-fit' />
             </div>
 
 
