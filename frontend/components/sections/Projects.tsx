@@ -12,7 +12,7 @@ export default async function Projects() {
             <p className='text-center text-4xl mb-4 text-white'>Projects <span className='text-accent text-7xl'>.</span></p>
             <div className='space-y-4'>
                 {projects.map((project) => (
-                    <a key={project._id} href={project.liveUrl || '#'} target='_blank' rel='noopener noreferrer' className='group flex gap-5 p-2 rounded-lg cursor-pointer ring-1 ring-transparent transition-all duration-200 ease-out hover:bg-accent/10 hover:ring-light-slate/40'>
+                    <a key={project._id} href={project.liveUrl || '#'} target='_blank' rel='noopener noreferrer' className='group flex items-center gap-5 p-2 rounded-lg cursor-pointer ring-1 ring-transparent transition-all duration-200 ease-out hover:bg-accent/10 hover:ring-light-slate/40'>
                         <div className='relative w-[40%] h-35 shrink-0 overflow-hidden rounded-lg'>
                             <Image
                                 src={urlFor(project.image).width(1200).height(720).url()}
@@ -22,7 +22,7 @@ export default async function Projects() {
                                 sizes='(max-width: 768px) 100vw, 300px'
                             />
                         </div>
-                        <div className='flex flex-col justify-between'>
+                        <div className='min-w-0 flex flex-col justify-between'>
                             <div className=''>
                                 <p className='text-white text-lg' >{project.title} <span
                                     aria-hidden='true'
@@ -31,10 +31,10 @@ export default async function Projects() {
                                 >
                                     ↗
                                 </span></p>
-                                <p>{project.description}</p>
+                                <p className='wrap-break-word'>{project.description}</p>
                             </div>
 
-                            <div className='flex gap-4 items-end'>
+                            <div className='mt-3 flex flex-wrap gap-2 items-end'>
                                 {project.technologies.map((tech) => {
                                     return (
                                         <div key={tech} className='bg-teal-400/10 rounded-xl w-fit '>
