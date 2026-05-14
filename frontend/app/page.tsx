@@ -14,7 +14,7 @@ export default function Home() {
       </div>
 
       {/* Right panel */}
-      <div className="xl:ml-[45%] xl:p-5">
+      <div className="xl:ml-[45%] xl:px-4 xl:py-2">
         <div className="xl:min-h-screen xl:flex xl:flex-col xl:justify-center ">
           <About />
         </div>
