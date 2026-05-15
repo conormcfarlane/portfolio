@@ -9,7 +9,7 @@ export default async function Projects() {
         <section id='projects'>
             <p className='text-center text-4xl mb-4 text-white'>Projects <span className='text-accent text-7xl'>.</span></p>
             <div className='space-y-4'>
-                {projects.map((project) => (
+                {projects.map((project: Project) => (
                     <a key={project._id} href={project.liveUrl || '#'} target='_blank' rel='noopener noreferrer' className='group flex items-center gap-5 p-2 rounded-lg cursor-pointer ring-1 ring-transparent transition-all duration-200 ease-out hover:bg-accent/10 hover:ring-light-slate/40'>
                         <div className='relative w-[40%] h-35 shrink-0 overflow-hidden rounded-lg'>
                             <Image
