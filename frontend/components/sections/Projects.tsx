@@ -4,8 +4,6 @@ import { Project } from '@/lib/types'
 import Image from 'next/image'
 import { urlFor } from '@/lib/image'
 export default async function Projects() {
-    console.log("PROJECT ID:", process.env.NEXT_PUBLIC_SANITY_PROJECT_ID);
-    console.log("DATASET:", process.env.NEXT_PUBLIC_SANITY_DATASET);
     const projects = await client.fetch<Project[]>(`*[_type == "project"] | order(orderRank asc)`);
     return (
         <section id='projects'>

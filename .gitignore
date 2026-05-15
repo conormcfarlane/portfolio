@@ -29,3 +29,5 @@ portfolio-cms/node_modules/
 portfolio-cms/.sanity/
 portfolio-cms/coverage/
 portfolio-cms/build/
+.vercel
+.env*.local
