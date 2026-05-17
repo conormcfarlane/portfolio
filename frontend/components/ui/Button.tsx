@@ -7,7 +7,7 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 }
 
 export default function Button({ label, className = "", href, ...props }: ButtonProps) {
-    const baseClasses = 'border border-accent px-3 py-2 rounded-lg  flex items-center justify-center cursor-pointer hover:bg-accent/15'
+    const baseClasses = 'border border-accent px-3 py-2 rounded-lg flex items-center justify-center cursor-pointer hover:bg-accent/15 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent'
 
     if (href) {
         return (
@@ -17,7 +17,7 @@ export default function Button({ label, className = "", href, ...props }: Button
         )
     }
     return (
-        <button className={""} {...props}>
+        <button type={props.type ?? 'button'} className={baseClasses + ' ' + className} {...props}>
             <span className='text-accent -translate-y-0.5'>{label}</span>
 
         </button>

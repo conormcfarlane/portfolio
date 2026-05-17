@@ -5,10 +5,10 @@ import Button from '../ui/Button'
 
 export default function Hero() {
     return (
-        <section id='hero' className='p-4 space-y-5 flex flex-col justify-center'>
+        <section id='hero' aria-labelledby='hero-heading' className='p-4 space-y-5 flex flex-col justify-center'>
             <div className='flex justify-between items-center space-y-5'>
                 <div className='space-y-2'>
-                    <div className='flex gap-6'>
+                    <nav aria-label='Social links' className='flex gap-6'>
                         <a
                             href='https://github.com/conormcfarlane'
                             target='_blank'
@@ -27,13 +27,13 @@ export default function Hero() {
                         >
                             <FaLinkedin className='text-2xl' />
                         </a>
-                    </div>
+                    </nav>
 
-                    <h1 className='text-5xl font-bold'>Hi, <span className='text-white'>I&apos;m Conor</span> </h1>
+                    <h1 id='hero-heading' className='text-5xl font-bold'>Hi, <span className='text-white'>I&apos;m Conor</span> </h1>
                     <p className='text-4xl'>I&apos;m a Junior Web Developer</p>
                 </div>
             </div>
-            <p> For this portfoilio site i have used Next.js and Sanity as a headless CMS to store and manage my project data.</p>
+            <p>For this portfolio site, I used Next.js and Sanity as a headless CMS to store and manage project data.</p>
             <div>
                 <Button label='Projects ↓' href='#projects' className='max-w-fit' />
             </div>

@@ -6,7 +6,7 @@ import Projects from "@/components/sections/Projects";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <main id="main-content" className="flex flex-col">
       {/* left pannel */}
       <div className="xl:fixed xl:flex xl:flex-col-reverse xl:justify-center xl:min-h-screen xl:w-1/3">
         {/* <Navbar /> */}
@@ -22,6 +22,6 @@ export default function Home() {
         <Projects />
       </div>
 
-    </div>
+    </main>
   );
 }

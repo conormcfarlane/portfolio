@@ -28,9 +28,16 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded-md focus:bg-white focus:px-3 focus:py-2 focus:text-black"
+        >
+          Skip to main content
+        </a>
         <div className="w-full max-w-[80%] mx-auto ">
           {children}
-        </div></body>
+        </div>
+      </body>
     </html>
   );
 }

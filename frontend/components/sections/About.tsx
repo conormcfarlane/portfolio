@@ -3,8 +3,8 @@ import React from 'react'
 export default function About() {
     const programmingTags = ['ReactJS', 'Next.js', 'Sanity CMS', 'HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'Tailwind', 'Github', 'VSCode']
     return (
-        <section id='about' className=''>
-            <p className='text-center text-4xl mb-4 text-white'>About <span className='text-accent text-7xl'>.</span></p>
+        <section id='about' aria-labelledby='about-heading' className=''>
+            <h2 id='about-heading' className='text-center text-4xl mb-4 text-white'>About <span className='text-accent text-7xl'>.</span></h2>
             <div className='flex flex-col justify-between gap-10 xl:flex-col'>
                 <p className='text-lg w-full'>I&apos;m a Junior Front-end Developer focused on building responsive, accessible web applications using React, Next.js, Tailwind CSS, and TypeScript.<br /><br />
 
@@ -15,15 +15,15 @@ export default function About() {
                     Outside of development, I&apos;m originally from Ireland and now based in Australia. In my free time, you&apos;ll usually find me at the gym or exploring Melbourne.
                 </p>
                 <div>
-                    <p className='whitespace-nowrap text-center text-xl mb-4'>&lt;&gt;  Tech & Languages &lt;/&gt;  </p>
-                    <div className='grid grid-cols-2 gap-x-5 gap-y-3 lg:grid-cols-3'>
+                    <h3 className='whitespace-nowrap text-center text-xl mb-4'>&lt;&gt;  Tech & Languages &lt;/&gt;</h3>
+                    <ul className='grid grid-cols-2 gap-x-5 gap-y-3 lg:grid-cols-3'>
                         {programmingTags.map((tag) => (
-                            <div key={tag} className='bg-teal-400/10 flex justify-center rounded-xl'>
-                                <p className='py-1 px-5 whitespace-nowrap text-accent md:px-13'>{tag}</p>
-                            </div>
+                            <li key={tag} className='bg-teal-400/10 flex justify-center rounded-xl'>
+                                <span className='py-1 px-5 whitespace-nowrap text-accent md:px-13'>{tag}</span>
+                            </li>
 
                         ))}
-                    </div>
+                    </ul>
                 </div>
 
             </div>
