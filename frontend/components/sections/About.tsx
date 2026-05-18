@@ -6,7 +6,7 @@ export default function About() {
         <section id='about' aria-labelledby='about-heading' className=''>
             <h2 id='about-heading' className='text-center text-4xl mb-4 text-white'>About <span className='text-accent text-7xl'>.</span></h2>
             <div className='flex flex-col justify-between gap-10 xl:flex-col'>
-                <p className='text-lg w-full'>I&apos;m a Junior Front-end Developer focused on building responsive, accessible web applications using React, Next.js, Tailwind CSS, and TypeScript.<br /><br />
+                <p className='text-lg w-full'>I&apos;m a Junior Front-End Developer focused on building responsive, accessible web applications using React, Next.js, Tailwind CSS, and TypeScript.<br /><br />
 
                     I&apos;ve been using Frontend Mentor challenges to simulate real-world workflows — translating Figma designs into clean, responsive interfaces and working with APIs, JSON data, and client-side routing.
                     <br /><br />
