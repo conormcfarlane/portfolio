@@ -30,7 +30,7 @@ export default function Hero() {
                     </nav>
 
                     <h1 id='hero-heading' className='text-5xl font-bold'>Hi, <span className='text-white'>I&apos;m Conor</span> </h1>
-                    <p className='text-4xl'>I&apos;m a Junior Front-End Developer</p>
+                    <p className='text-4xl'>I&apos;m a Junior Developer</p>
                 </div>
             </div>
             <p>For this portfolio site, I used Next.js and Sanity as a headless CMS to store and manage project data.</p>
