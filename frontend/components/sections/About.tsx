@@ -8,12 +8,14 @@ export default function About() {
             <div className='flex flex-col justify-between gap-10 xl:flex-col'>
                 <p className='text-lg w-full'>I&apos;m a Developer focused on building responsive, accessible web applications using React, Next.js, TypeScript, and Tailwind CSS.
                     <br />
+                    <br />
                     Through personal projects, I&apos;ve gained experience building modern web applications from the ground up, working with APIs, dynamic data, client-side routing, and responsive layouts. I enjoy turning designs into intuitive user experiences and writing clean, maintainable code.
-<br />
                     Many of my projects have been built from professional Figma designs and Frontend Mentor challenges, helping me develop practical experience with real-world development workflows, component-based architecture, and modern frontend best practices.
-<br />
+                    <br />
+                    <br />
                     Before transitioning into software development, I worked in construction and quality assurance, where I developed strong attention to detail, problem-solving skills, and experience working in fast-paced team environments. I now apply those same skills to building reliable software as I continue to grow toward full-stack development.
-<br />
+                    <br />
+                    <br />
                     Originally from Ireland and now based in Australia, you&apos;ll usually find me at the gym, exploring Melbourne, or continuing to learn and build new projects.
                 </p>
                 <div>
