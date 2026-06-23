@@ -4,7 +4,7 @@ import { Project } from '@/lib/types'
 import Image from 'next/image'
 import { urlFor } from '@/lib/image'
 export default async function Projects() {
-    const projects = await client.fetch<Project[]>(`*[_type == "project"] | order(orderRank asc)`);
+    const projects = await client.fetch<Project[]>(`*[_type == "project"] | order(orderRank desc)`);
     return (
         <section id='projects' aria-labelledby='projects-heading'>
             <h2 id='projects-heading' className='text-center text-4xl mb-4 text-white'>Projects <span className='text-accent text-7xl'>.</span></h2>
