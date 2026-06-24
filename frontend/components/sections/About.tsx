@@ -9,7 +9,7 @@ export default function About() {
                 <p className='text-lg w-full'>I&apos;m a Developer focused on building responsive, accessible web applications using React, Next.js, TypeScript, and Tailwind CSS.
                     <br />
                     <br />
-                    Through personal projects, I&apos;ve gained experience building modern web applications from the ground up, working with APIs, dynamic data, client-side routing, and responsive layouts. I enjoy turning designs into intuitive user experiences and writing clean, maintainable code.
+                    Through personal projects, I&apos;ve gained experience building modern web applications from the ground up, working with APIs, dynamic data, client-side routing, and responsive layouts. I enjoy turning designs into user experiences and writing clean, maintainable code.
                     Many of my projects have been built from professional Figma designs and Frontend Mentor challenges, helping me develop practical experience with real-world development workflows, component-based architecture, and modern frontend best practices.
                     <br />
                     <br />
